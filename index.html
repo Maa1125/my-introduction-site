@@ -1,81 +1,38 @@
-<!doctype html>
-<html lang="mn">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Нүүр — Миний танилцуулга</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="site-title">Миний танилцуулга веб сайт</h1>
-      <nav class="nav">
-        <a href="index.html">Нүүр</a>
-        <a href="about.html">Миний тухай</a>
-        <a href="family.html">Миний гэр бүл</a>
-        <a href="friends.html">Найзууд</a>
-        <a href="contact.html">Холбоо барих</a>
-      </nav>
-      <p class="small">5 хуудастай, хүснэгтээр бүтэцлэсэн жишээ сайт</p>
-    </div>
-  </header>
+<main class="container">
+  <!-- Байршлыг хүснэгтээр гаргаж байна -->
+  <table class="layout">
+    <tr>
+      <!-- Sidebar-ийг хоосон болгохгүй, жижиг танилцуулга л үлдээнэ -->
+      <td class="sidebar">
+        <div class="card">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="about.html">Миний тухай</a></li>
+            <li><a href="family.html">Миний гэр бүл</a></li>
+            <li><a href="friends.html">Найзууд</a></li>
+            <li><a href="contact.html">Холбоо барих</a></li>
+          </ul>
+          <p class="small">Хуудас хооронд <b>a</b> таг-аар шилжинэ.</p>
+        </div>
+      </td>
 
-  <main class="container">
-    <!-- Байршлыг хүснэгтээр гаргаж байна -->
-    <table class="layout">
-      <tr>
-        <td class="sidebar">
-          <div class="card">
-            <h3>Товч цэс</h3>
-            <ul>
-              <li><a href="about.html">Миний тухай</a></li>
-              <li><a href="family.html">Гэр бүл</a></li>
-              <li><a href="friends.html">Найзууд</a></li>
-              <li><a href="contact.html">Холбоо барих</a></li>
-            </ul>
-          </div>
+      <!-- Main хэсэгт WELCOME GIF -->
+      <td class="main">
+        <div class="card" style="text-align:center;">
+          <h2>WELCOME</h2>
 
-          <div class="card">
-            <h3>Сонирхол</h3>
-            <span class="badge">Технологи</span>
-            <span class="badge">Сургалт</span>
-            <span class="badge">Спорт</span>
-            <p class="small">Энд өөрийн сонирхлоо богино бичээрэй.</p>
-          </div>
-        </td>
+          <!-- GIF зураг -->
+          <img
+            src="https://www.pinterest.com/pin/47217496085632683/"
+            alt="Welcome GIF"
+            style="max-width:100%; height:auto; border-radius:10px;"
+          />
 
-        <td class="main">
-          <div class="card">
-            <h2>Тавтай морил!</h2>
-            <p>
-              Сайн байна уу? Энэ бол миний өөрийн тухай танилцуулга веб сайт.
-              Доорх хуудсууд руу орж дэлгэрэнгүй мэдээлэлтэй танилцаарай.
-            </p>
-            <ol>
-              <li><a href="about.html">Миний тухай</a></li>
-              <li><a href="family.html">Миний гэр бүл</a></li>
-              <li><a href="friends.html">Найзууд</a></li>
-              <li><a href="contact.html">Холбоо барих</a></li>
-            </ol>
-          </div>
-
-          <div class="card">
-            <h2>Сүүлийн шинэчлэлт</h2>
-            <p class="small">
-              Огноо: <time datetime="2026-02-23">2026-02-23</time><br/>
-              Тайлбар: Хуудсуудын бүтэц, холбоосуудыг бэлэн болголоо.
-            </p>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      © 2026 Миний сайт — Бүх эрх хуулиар хамгаалагдсан.
-    </div>
-  </footer>
-</body>
-</html>
+          <p class="small" style="margin-top:10px;">
+            Сайн байна уу! Миний танилцуулга веб сайтад тавтай морил 😊
+          </p>
+        </div>
+      </td>
+    </tr>
+  </table>
+</main>
