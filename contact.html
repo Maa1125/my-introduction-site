@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Найзууд</title>
+  <title>Холбоо барих</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title">Миний найзууд</h1>
+      <h1 class="site-title">Холбоо барих</h1>
       <nav class="nav">
         <a href="index.html">Нүүр</a>
         <a href="about.html">Миний тухай</a>
@@ -25,27 +25,40 @@
       <tr>
         <td class="sidebar">
           <div class="card">
-            <h3>Найзын тухай</h3>
-            <p class="small">
-              Найз нөхөд бол хамтдаа өсөж хөгжих, дэмжих хамгийн сайхан орчин.
-              Энд найзуудынхаа тухай товч бичээрэй.
-            </p>
+            <h3>Сошиал холбоос</h3>
+            <ul>
+              <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            <p class="small">Жинхэнэ линкээ энд солиорой.</p>
           </div>
         </td>
 
         <td class="main">
           <div class="card">
-            <h2>Найзуудын жагсаалт</h2>
-            <ul>
-              <li><strong>(Найз 1)</strong> — (хаана танилцсан, юугаараа гоё найз вэ)</li>
-              <li><strong>(Найз 2)</strong> — (товч)</li>
-              <li><strong>(Найз 3)</strong> — (товч)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h2>Хамт хийдэг зүйлс</h2>
-            <p>Жишээ: Спорт, аялал, төсөл хийх, хичээл давтах гэх мэт.</p>
+            <h2>Мессеж үлдээх</h2>
+            <form>
+              <p>
+                <label>Нэр<br/>
+                  <input type="text" name="name" placeholder="Таны нэр" required />
+                </label>
+              </p>
+              <p>
+                <label>И-мэйл<br/>
+                  <input type="email" name="email" placeholder="name@example.com" required />
+                </label>
+              </p>
+              <p>
+                <label>Мессеж<br/>
+                  <textarea name="message" rows="5" placeholder="Энд бичээрэй..." required></textarea>
+                </label>
+              </p>
+              <button type="submit">Илгээх</button>
+              <p class="small">
+                (Энэ бол frontend жишээ. Илгээх ажиллуулахын тулд backend эсвэл form service хэрэгтэй.)
+              </p>
+            </form>
           </div>
         </td>
       </tr>
